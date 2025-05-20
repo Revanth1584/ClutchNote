@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clutchnote - Student Planner</title>
+</head>
+<body>
+  <h1>Welcome to Clutchnote</h1>
+  <p>Your personal student planner.</p>
+
+  <!-- Your app UI will go here -->
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.7.3/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.7.3/firebase-analytics.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyBB9TxQzZ8kvczzt8rDrRyco9mrmfJmzfc",
+      authDomain: "clutchnote-4c0ee.firebaseapp.com",
+      projectId: "clutchnote-4c0ee",
+      storageBucket: "clutchnote-4c0ee.firebasestorage.app",
+      messagingSenderId: "125175153807",
+      appId: "1:125175153807:web:18b0eda839e4fa654edcfa",
+      measurementId: "G-0KSWH2QR7R"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+</body>
+</html>
